@@ -22,3 +22,7 @@ Qui permet d'importer une image.
 Il est aussi possible de vérifier en ligne de commande grâce à : `docker ps`
 ### C - Créer un fichier index.html simple
 ![index html](./img/index.PNG)
+### D - Démarrer un conteneur et servir la page html créée précédemment à l’aide d’un volume (option -v de docker run)
+![cmd docker run -v](./img/dockerrunv.PNG)
+### E - Supprimer le conteneur précédent et arriver au même résultat que précédemment à l’aide de la commande docker cp
+![commande+result](./img/e.PNG)
