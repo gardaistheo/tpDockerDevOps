@@ -11,4 +11,10 @@ Après avoir lancé toutes les commandes on a build une application depuis un zi
 ## Exécuter un serveur web (apache, nginx, …) dans un conteneur docker
 ### A - Récupérer l’image sur le Docker Hub
 J'ai récupéré l'image sur ce site : [Docker](https://hub.docker.com/_/nginx)
+
+Où j'ai pu trouver la commande :
 `docker pull nginx`
+Qui permet d'importer une image
+
+### B - Vérifier que cette image est présente en local
+![graphique verification importation image](./img/localVerif.PNG)
