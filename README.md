@@ -35,5 +35,27 @@ Le Dockerfile :
 FROM nginx
 
 #index.html
-COPY html/ usr/share/nginx/html/%
+COPY ./ usr/share/nginx/html/%
+```
+La Commande :
+```console
+C:\Users\garda\Documents>docker build .
+[+] Building 0.3s (7/7) FINISHED                                                                         docker:default
+ => [internal] load build definition from Dockerfile                                                               0.1s
+ => => transferring dockerfile: 102B                                                                               0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/nginx:latest                                                    0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 1.01kB                                                                                0.0s
+ => CACHED [1/2] FROM docker.io/library/nginx                                                                      0.0s
+ => [2/2] COPY ./ usr/share/nginx/html/%                                                                           0.0s
+ => exporting to image                                                                                             0.0s
+ => => exporting layers                                                                                            0.0s
+ => => writing image sha256:ffbb33e50711e4b13d3d163fdd7730d2a2fd57b50fe1d0a2bf72fc8daa6c9ffa                       0.0s
+
+View build details: docker-desktop://dashboard/build/default/default/ptoocvbw6z0ug5zd7n4qltvgm
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview
 ```
