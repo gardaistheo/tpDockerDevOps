@@ -37,6 +37,8 @@ FROM nginx
 #index.html
 COPY ./ usr/share/nginx/html/%
 ```
+J'ai lancé la commande en me positionnant la où le Dockerfile était soit dans Documents
+
 La Commande :
 ```console
 C:\Users\garda\Documents>docker build .
