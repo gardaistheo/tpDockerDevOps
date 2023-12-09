@@ -26,3 +26,13 @@ Il est aussi possible de vérifier en ligne de commande grâce à : `docker ps`
 ![cmd docker run -v](./img/dockerrunv.PNG)
 ### E - Supprimer le conteneur précédent et arriver au même résultat que précédemment à l’aide de la commande docker cp
 ![commande+result](./img/ec.PNG)
+
+## 6 - Builder une image
+### A - A l’aide d’un Dockerfile, créer une image (commande docker build)
+```console
+#image
+FROM nginx
+
+#index.html
+COPY html/ usr/share/nginx/html/%
+```
