@@ -29,6 +29,7 @@ Il est aussi possible de vérifier en ligne de commande grâce à : `docker ps`
 
 ## 6 - Builder une image
 ### A - A l’aide d’un Dockerfile, créer une image (commande docker build)
+Le Dockerfile :
 ```console
 #image
 FROM nginx
