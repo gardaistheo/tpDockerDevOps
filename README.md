@@ -10,4 +10,5 @@ Après avoir lancé toutes les commandes on a build une application depuis un zi
 ## DÉBUT DU TP
 ## Exécuter un serveur web (apache, nginx, …) dans un conteneur docker
 ### A - Récupérer l’image sur le Docker Hub
+J'ai récupéré l'image sur ce site : [Docker](https://hub.docker.com/_/nginx)
 `docker pull nginx`
