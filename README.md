@@ -18,3 +18,5 @@ Qui permet d'importer une image.
 
 ### B - Vérifier que cette image est présente en local
 ![graphique verification importation image](./img/localVerif.PNG)
+
+Il est aussi possible de vérifié en ligne de commande grâce à : `docker ps`
