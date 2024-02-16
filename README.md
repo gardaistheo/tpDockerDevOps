@@ -81,4 +81,4 @@ docker run -d --name phpmyadmin-container --link mysql-container:db -p 8080:80 p
 
 ```
 Résultat : 
-![insrBd](./img/inserBd.PNG)
+![insrBd](./img/inserBd.png)
