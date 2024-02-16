@@ -61,3 +61,24 @@ View build details: docker-desktop://dashboard/build/default/default/ptoocvbw6z0
 What's Next?
   View a summary of image vulnerabilities and recommendations → docker scout quickview
 ```
+### C - Différence
+
+La méthode 5 est préférable pour les tests en raison de sa rapidité, cependant, pour une solution définitive, la méthode 6 est plus appropriée car elle nécessite une manipulation unique. Dans le contexte du développement et des opérations (DevOps) visant à automatiser les tâches récurrentes, nous favoriserons la méthode 6.
+
+## 7 - Utiliser une base de données dans un conteneur docker
+### A - Récupérer les images mysql:5.7 et phpmyadmin depuis le Docker Hub
+```
+docker pull mysql:5.7
+docker pull phpmyadmin/phpmyadmin
+```
+### B - Exécuter deux conteneurs à partir des images et ajouter une table ainsi que quelques enregistrements dans la base de données à l’aide de phpmyadmin
+```
+docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=password mysql:5.7
+```
+
+```
+docker run -d --name phpmyadmin-container --link mysql-container:db -p 8080:80 phpmyadmin/phpmyadmin
+
+```
+Résultat : 
+![insrBd](./img/inserBd.PNG)
